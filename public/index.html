@@ -1,0 +1,66 @@
+<html>
+<head>
+	  <title>SokectIo-Express</title>
+	  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<style>
+	p{
+	color:blue;
+	font-size:20px;
+	font-weight:bold;
+	}
+	
+	#sectionAdduser{
+						
+				display:block;		
+						
+						}			
+
+
+	#selectChat{
+	
+			display:none;
+	
+	}
+
+	#sectionChat{
+	
+			display:none;
+	
+	}		
+</style>
+
+<body>
+	<div id="chat-container">
+			<div id="sectionAdduser">
+				<label>add-User: </label><input type="text" id="useradd">
+				<button id="btn-AddUser">Add</button>
+			</div>
+			
+			<div id="selectChat">
+				<h1>Welcome:<label id="TitleUser"></label></h1>					
+				<hr>
+				<h2>User Active</h2>
+				<div id="SectionUser"></div>
+			</div>
+			
+			<div id="sectionChat">
+				<h1>
+				<label id="TitleUser2"></label>
+				Connect at:
+				<label id="TitleUser3"></label></h1>	
+				<button id="back">back</button>
+				<div id="chat-window">
+					<div id="output"></div>
+					<div id="output2"></div>
+				</div>
+				<hr>
+				<input id="messageInput" type="text" placeholder="message">
+				<button id="send">Send</button>
+			</div>
+	</div>
+</body>
+	 <!--socket.io -->  
+	 <script src="/socket.io/socket.io.js"></script>
+	 <script src="/javascripts/chat.js"></script>
+</html>
